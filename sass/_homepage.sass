@@ -1,0 +1,193 @@
+.mainpage
+	&_bg
+		width: 100%
+		height: 100vh
+		background-image: url('../img/bg.jpg')
+		background-size: cover
+		background-position: center center
+		background-repeat: no-repeat
+
+	&_logo, &_menuleft
+		max-width: 83.35%
+		position: absolute
+		top: 50%
+		left: 50%
+		transform: translate(-50%, -50%)
+
+	&_menuleft
+		text-align: left
+		width: 83.35%
+		list-style-type: none
+		padding: 0
+		margin: 0 -15px
+		font-size: 175px
+		letter-spacing: 1.16px
+		line-height: .9
+
+		&-item
+			display: flex
+			align-items: center
+			margin: 5px 0
+
+			a
+				color: #e95a2d
+				text-decoration: none
+				padding: 0 10px
+				outline: none
+				position: relative
+				display: inline-block
+				overflow: hidden
+				&:hover 
+					color: #b7c2c3
+				&::after
+					content: ''
+					position: absolute
+					height: 100%
+					width: 100%
+					top: 0
+					right: 0
+					z-index: -1
+					background: #e95a2d
+					transform: translate3d(101%,0,0)
+					transition: transform 0.5s
+					transition-timing-function: cubic-bezier(0.7,0,0.3,1)
+				&:hover::after
+					transform: translate3d(0,0,0)
+				span
+					display: block
+					position: relative
+					&::before
+						content: attr(data-letters)
+						position: absolute
+						color: #fff
+						left: 0
+						overflow: hidden
+						white-space: nowrap
+						width: 0%
+						transition: width 0.5s
+						transition-timing-function: cubic-bezier(0.7,0,0.3,1)
+				&:hover span::before
+					width: 100%
+	&_navicon-wrap
+		position: absolute
+		top: 60px
+		right: 65px
+	
+	&_navicon
+		width: 44px
+		height: 45px
+		position: relative
+		transform: rotate(0deg)
+		transition: .5s ease-in-out
+		cursor: pointer
+		z-index: 10
+		&:before
+			content: ''
+			position: absolute
+			top: -23.5px
+			left: -13px
+			width: 70px
+			height: 70px
+			border-radius: 50%
+			background: #000
+			transition: background .3s ease-in-out
+		&:hover:before
+			background: #e95a2d
+		&:hover
+			span
+				background: #fff
+		span
+			display: block
+			position: absolute
+			height: 5px
+			width: 100%
+			background: #5bb4b8
+			opacity: 1
+			left: 0
+			transform: rotate(0deg)
+			transition: .3s ease-in-out
+			&:nth-child(1)
+				top: 0px
+				transform-origin: left center
+			&:nth-child(2)
+				top: 10px
+				transform-origin: left center
+			&:nth-child(3)
+				top: 20px
+				transform-origin: left center
+		&.open span
+			&:nth-child(1)
+				transform: rotate(45deg)
+				top: -6px
+				left: 6.5px
+			&:nth-child(2)
+				width: 0%
+				opacity: 0
+			&:nth-child(3)
+				transform: rotate(-45deg)
+				top: 25px
+				left: 6.5px
+	
+	&_navbar
+		position: absolute
+		top: 0
+		bottom: 0
+		right: -350px
+		width: 350px
+		background: #5bb4b8
+		transition: right .3s ease-in-out
+		font-size: 0
+		z-index: 5
+		&.open
+			right: 0
+
+		&-links
+			font-size: 45px
+			text-transform: uppercase
+			list-style-type: none
+			margin: 50px 0 0 0
+			padding: 0 75px
+			&-item
+				&:last-child
+					margin-top: 50px
+				a
+					color: #000
+					text-decoration: none
+					transition: color .3s ease-in-out
+				&:hover
+					a
+						color: #e95a2d
+		&-logo
+			max-width: 65%
+			position: absolute	
+			bottom: 40px
+			left: 50%
+			transform: translate(-50%, 0)
+
+	&_social-i
+		display: inline-block
+		width: 70px
+		height: 70px
+		background: #000
+		border-radius: 50%
+		margin: 37px 0 0 52px
+		&--insta
+			margin: 37px 0 0 18px
+		&:hover
+			background: #e95a2d
+			transition: background .3s ease-in-out
+			svg
+				fill: #e95a2d
+				stroke: #fff
+		svg
+			position: relative
+			top: 15px
+			left: 14px
+			transition: fill .3s ease-in-out, stroke .3s ease-in-out
+
+
+
+
+
+			
+
