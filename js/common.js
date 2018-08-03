@@ -1,7 +1,7 @@
 $(function() {
 
 	// Preloader function
-	document.body.onload = function() {
+	$(window).load = function() {
 		setTimeout(function() {
 			var preloader = document.getElementById('preloader');
 			if( !preloader.classList.contains('done') )
@@ -17,5 +17,4 @@ $(function() {
 			$('.mainpage_navbar').toggleClass('open');
 		});
 	});
-
 });
