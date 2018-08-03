@@ -1,35 +1,30 @@
-.spinner
-  position: absolute
-  top: calc(50% - 40px)
-  left: calc(50% - 40px)
-  width: 80px
-  height: 80px
-  background-color: #e95a2d
-  border-radius: 100%
-  -webkit-animation: sk-scaleout 1.0s infinite ease-in-out
-  animation: sk-scaleout 1.0s infinite ease-in-out
+body.preloader-site
+    overflow: hidden
 
-  &-wrap
-    position: fixed
-    left: 0
-    top: 0
-    width: 100%
+.preloader-wrapper
     height: 100%
+    width: 100%
     background: #e5f3f4
-    z-index: 999
-    transition: 1s all
-    opacity: 1
-    visibility: visible
+    position: fixed
+    top: 0
+    left: 0
+    z-index: 9999999
+
+.preloader-wrapper 
+  .preloader
+    position: absolute
+    top: calc(50% - 40px)
+    left: calc(50% - 40px)
+    width: 80px
+    height: 80px
+    background-color: #e95a2d
+    border-radius: 100%
+    animation: sk-scaleout 1.0s infinite ease-in-out
 
 @keyframes sk-scaleout
   0%
     transform: scale(0)
 
   100%
-    -webkit-transform: scale(1)
     transform: scale(1)
     opacity: 0
-  
-.done
-  opacity: 0
-  visibility: hidden
