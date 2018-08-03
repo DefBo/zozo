@@ -20,7 +20,7 @@
 		list-style-type: none
 		padding: 0
 		margin: 0 -15px
-		font-size: 175px
+		font-size: 160px
 		letter-spacing: 1.16px
 		line-height: .9
 
@@ -28,6 +28,7 @@
 			display: flex
 			align-items: center
 			margin: 5px 0
+			position: relative
 
 			a
 				color: #e95a2d
@@ -75,7 +76,7 @@
 	
 	&_navicon
 		width: 44px
-		height: 45px
+		height: 25px
 		position: relative
 		transform: rotate(0deg)
 		transition: .5s ease-in-out
@@ -130,6 +131,7 @@
 	
 	&_navbar
 		position: absolute
+		padding: 37px 53px 0
 		top: 0
 		bottom: 0
 		right: -350px
@@ -146,8 +148,9 @@
 			text-transform: uppercase
 			list-style-type: none
 			margin: 50px 0 0 0
-			padding: 0 75px
+			padding: 0 20px
 			&-item
+				position: relative
 				&:last-child
 					margin-top: 50px
 				a
@@ -164,26 +167,28 @@
 			left: 50%
 			transform: translate(-50%, 0)
 
-	&_social-i
-		display: inline-block
-		width: 70px
-		height: 70px
-		background: #000
-		border-radius: 50%
-		margin: 37px 0 0 52px
-		&--insta
-			margin: 37px 0 0 18px
-		&:hover
-			background: #e95a2d
-			transition: background .3s ease-in-out
+	&_social
+		&-wrap
+			display: flex
+			justify-content: space-between
+		&-i
+			display: inline-block
+			width: 70px
+			height: 70px
+			background: #000
+			border-radius: 50%
+			&:hover
+				background: #e95a2d
+				transition: background .3s ease-in-out
+				svg
+					fill: #e95a2d
+					stroke: #fff
 			svg
-				fill: #e95a2d
-				stroke: #fff
-		svg
-			position: relative
-			top: 15px
-			left: 14px
-			transition: fill .3s ease-in-out, stroke .3s ease-in-out
+				position: relative
+				top: 15px
+				left: 14px
+				transition: fill .3s ease-in-out, stroke .3s ease-in-out
+
 
 
 
