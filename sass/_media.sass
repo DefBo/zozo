@@ -3,6 +3,15 @@
 /*==========  Desktop First  ==========*/
 
 /* Large Devices, Wide Screens */
+@media only screen and (max-width : 1024px)
+	.mainpage_logo
+		top: auto
+		left: auto
+		bottom: 25px
+		right: 25px
+		max-width: 250px
+		transform: none
+
 @media only screen and (max-width : 1010px)
 	.mainpage_menuleft
 		font-size: 110px
@@ -13,39 +22,96 @@
 	.mainpage_menuleft
 		font-size: 90px
 
-@media only screen and (max-width : 600px)
-	.mainpage_logo
-		top: auto
-		left: auto
-		bottom: 25px
-		right: 25px
-		max-width: 250px
-		transform: none
+@media only screen and (max-height : 675px)
+	.mainpage_navbar-links
+		font-size: 35px
 
+@media only screen and (max-height : 576px)
+	.mainpage_navbar-links-item:last-child
+		margin-top: 30px
+	.mainpage_navbar-links
+		margin: 20px 0 0 0
 
 /* Extra Small Devices, Phones */
+@media only screen and (max-height : 470px)
+	.mainpage_navbar-links
+		font-size: 30px
+
+@media only screen and (max-height : 420px)
+	.mainpage_navbar-links
+		font-size: 25px
+
+
 @media only screen and (max-width : 414px)
 	.mainpage_navbar
-		width: 100%
-		right: -100%
+		width: 50%
+		right: -50%
+		padding: 17px 20px 0
 	.mainpage_navbar-links-item:last-child
 		margin-top: 30px
 	.mainpage_navbar-links
 		margin: 35px 0 0 0
 	.mainpage_navbar-logo
-		bottom: 37px
+		bottom: 33px
 	.mainpage_navbar-links
 		padding: 0 15px
 	.mainpage_navbar-logo
-		display: none
+		max-width: 75%
+	.mainpage_menuleft
+		font-size: 70px
+
+	.mainpage_navicon-wrap
+		top: 31px
+		right: 30px
+	.mainpage_navicon
+		width: 25px
+		height: 17px
+		&:before
+			width: 45px
+			height: 45px
+			top: -14px
+			left: -10px
+		span
+			height: 3px
+			&:nth-child(2)
+				top: 7px
+			&:nth-child(3)
+				top: 14px
+
+	.mainpage_navicon 
+		&.open span
+			&:nth-child(1)
+				top: -2px
+				left: 4px
+			&:nth-child(3)
+				top: 16px
+				left: 3.5px
+
+	.mainpage_social-i
+		width: 45px
+		height: 45px
+		svg
+			width: 27px
+			height: 27px
+
+@media only screen and (max-height : 385px)
+	.mainpage_navbar-links
+		font-size: 22px
+
+
+
 
 
 /* Custom, iPhone Retina */
-@media only screen and (max-width : 360px)
+@media only screen and (max-width : 375px)
 	.mainpage_navbar
-		padding: 37px 30px 0
-	.mainpage_navicon-wrap
-		right: 44px
+		width: 55%
+		right: -55%
+
+@media only screen and (max-width : 355px)
+	.mainpage_navbar
+		width: 60%
+		right: -60%
 
 @media only screen and (max-width : 320px)
 	.mainpage_menuleft

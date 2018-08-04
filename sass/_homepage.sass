@@ -141,7 +141,7 @@
 		font-size: 0
 		z-index: 5
 		&.open
-			right: 0
+			right: -1px
 
 		&-links
 			font-size: 45px
@@ -172,11 +172,13 @@
 			display: flex
 			justify-content: space-between
 		&-i
-			display: inline-block
 			width: 70px
 			height: 70px
 			background: #000
 			border-radius: 50%
+			display: flex
+			justify-content: center
+			align-items: center
 			&:hover
 				background: #e95a2d
 				transition: background .3s ease-in-out
@@ -184,9 +186,6 @@
 					fill: #e95a2d
 					stroke: #fff
 			svg
-				position: relative
-				top: 15px
-				left: 14px
 				transition: fill .3s ease-in-out, stroke .3s ease-in-out
 
 
