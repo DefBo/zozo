@@ -137,7 +137,7 @@
 		right: -350px
 		width: 350px
 		background: #5bb4b8
-		transition: right .3s ease-in-out
+		transition: right .2s ease-in-out
 		font-size: 0
 		z-index: 5
 		&.open
@@ -160,6 +160,11 @@
 				&:hover
 					a
 						color: #e95a2d
+			&-item.active
+				a
+					color: #e95a2d
+					cursor: default
+
 		&-logo
 			max-width: 65%
 			position: absolute	
@@ -187,11 +192,3 @@
 					stroke: #fff
 			svg
 				transition: fill .3s ease-in-out, stroke .3s ease-in-out
-
-
-
-
-
-
-			
-
