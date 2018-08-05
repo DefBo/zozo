@@ -17,6 +17,15 @@
 
 <body>
 
+	<style>
+		@media only screen and (max-width : 700px) {
+			.mainpage_navicon:before {
+	    		background: #e95a2d; }
+	    	.mainpage_navicon span {
+	    		background: #fff;
+	    	}
+	</style>
+
 	<!-- <div class="preloader-wrapper">
 	    <div class="preloader"></div>
 	</div> -->
@@ -47,26 +56,56 @@
 			<li class="mainpage_navbar-links-item"><a href="#">Menu</a></li>
 			<li class="mainpage_navbar-links-item"><a href="delivery.html">Delivery</a></li>
 			<li class="mainpage_navbar-links-item"><a href="#">Gallery</a></li>
-			<li class="mainpage_navbar-links-item"><a href="locations.html">Locations</a></li>
-			<li class="mainpage_navbar-links-item active"><a href="about.html">About</a></li>
+			<li class="mainpage_navbar-links-item active"><a href="locations.html">Locations</a></li>
+			<li class="mainpage_navbar-links-item"><a href="about.html">About</a></li>
 			<li class="mainpage_navbar-links-item"><a href="#">Contact</a></li>
 			<li class="mainpage_navbar-links-item"><a href="#">Hebrew</a></li>
 		</ul>
 		<img src="img/sidebar-logo.png" alt="Logo" class="img-responsive mainpage_navbar-logo">
 	</nav>
 
-	<div class="about_wrap">
+	<div class="locations_wrap">
 		<div class="col">
-			<h2 class="about_title">Welcome<br />to Zozobra</h2>
-			<p class="about_description">We invite you to discover Avi Conforti’s unique Asian cuisine, which combines ancient Asian traditional cooking techniques from across Asia, India and the Far East and creates a fascinating fusion of flavors, aromas and colors. Shared eating of a variety of portions enables our diners to experience the world of flavors of Zozobra.</p>
+			<div class="row locations_cities">
+				<div class="locations_cities-item">
+					<a href="#">Zozobra Tel Aviv</a>
+				</div>
+				<div class="locations_cities-item">
+					<a href="#">Zozobra Herzliya</a>
+				</div>
+				<div class="locations_cities-item">
+					<a href="#">Zozobra Kfar Saba</a>
+				</div>
+			</div>
+			<div class="row locations_img"></div>
 		</div>
-		<div class="col"></div>
+		<div class="col">
+			<div class="row locations_map" id="map"></div>
+			<div class="row locations_vouchers">
+				<a href="#">Gift<br /> vouchers</a>
+			</div>
+		</div>
 	</div>
 
 
 	
 	
 	<script src="js/scripts.min.js"></script>
+	<script>
+		// Initialize and add the map
+		function initMap() {
+		  // The location of Uluru
+		  var uluru = {lat: -25.344, lng: 131.036};
+		  // The map, centered at Uluru
+		  var map = new google.maps.Map(
+		      document.getElementById('map'), {zoom: 4, center: uluru});
+		  // The marker, positioned at Uluru
+		  var marker = new google.maps.Marker({position: uluru, map: map});
+		}
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBNPuzSdhgPlD-8htikTwGyc7niE1WpwSU&callback=initMap">
+    </script>
 
 </body>
 </html>

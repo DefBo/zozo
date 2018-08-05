@@ -9,6 +9,11 @@
 	.about_description
 		font-size: 19px
 
+@media only screen and (max-width : 1130px)
+	.locations_vouchers 
+		a
+			font-size: 140px
+
 @media only screen and (max-width : 1024px)
 	.mainpage_logo
 		top: auto
@@ -25,8 +30,21 @@
 		font-size: 100px
 	.about_description
 		font-size: 18px
+	.locations_cities-item
+		padding: 0 15px
+	.locations_vouchers
+		padding: 0 
+		a
+			font-size: 100px
+			margin: 0 30px
+	.locations_cities-item
+		font-size: 60px
 
 @media only screen and (max-width : 825px)
+	.locations_cities-item
+		font-size: 50px
+
+@media only screen and (max-width : 700px)
 	.about_title
 		font-size: 80px
 	.about_wrap
@@ -42,12 +60,41 @@
 				justify-content: center
 			&:last-child
 				background-position: center bottom
+	.locations_img
+		display: none
+	.locations_wrap
+		flex-direction: column
+		.col
+			&:first-child
+				width: 100%
+				height: 25%
+				.row
+					height: 95%
+				.locations_cities-item
+					border-width: 7px
+					a
+						margin: 0 auto
+				.locations_cities-item
+					font-size: 30px
+			&:last-child
+				width: 100%
+				height: 75%
+				.row
+					&:first-child
+						height: 65%
+					&:last-child
+						height: 33%
 
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
 	.mainpage_menuleft
 		font-size: 90px
+
+@media only screen and (max-width : 640px)
+	.locations_vouchers
+		a
+			font-size: 90px
 
 @media only screen and (max-height : 675px)
 	.mainpage_navbar-links
@@ -70,6 +117,11 @@
 	.about_description
 		font-size: 16px
 
+@media only screen and (max-width : 450px)
+	.locations_vouchers
+		a
+			font-size: 70px
+
 /* Extra Small Devices, Phones */
 @media only screen and (max-height : 470px)
 	.mainpage_navbar-links
@@ -78,6 +130,16 @@
 @media only screen and (max-height : 420px)
 	.mainpage_navbar-links
 		font-size: 25px
+	.about_wrap
+		flex-direction: row !important
+		.col
+			width: 50%
+			height: 100%
+			&:first-child
+				order: 0
+				padding: 0 10px 0 0
+			&:last-child
+				background-position: center center
 
 
 @media only screen and (max-width : 414px)
@@ -138,6 +200,31 @@
 	.about_wrap 
 		.col:first-child
 			padding: 15px 0 0 0
+
+@media only screen and (max-height : 385px)
+	.mainpage_navbar-links
+		font-size: 22px
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 375px)
+	.mainpage_navbar
+		width: 55%
+		right: -55%
+
+@media only screen and (max-width : 355px)
+	.mainpage_navbar
+		width: 60%
+		right: -60%
+	.locations_vouchers
+		a
+			font-size: 50px
+
+@media only screen and (max-width : 320px)
+	.mainpage_menuleft
+		font-size: 80px
+	.mainpage_navbar-links
+		margin: 30px 0 0 0
 
 @media only screen and (max-height : 385px)
 	.mainpage_navbar-links
