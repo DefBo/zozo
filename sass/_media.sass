@@ -22,6 +22,10 @@
 		right: 25px
 		max-width: 250px
 		transform: none
+	.contact_wrap
+		justify-content: center
+	.contact_form
+		height: auto
 
 @media only screen and (max-width : 1010px)
 	.mainpage_menuleft
@@ -39,10 +43,55 @@
 			margin: 0 30px
 	.locations_cities-item
 		font-size: 60px
+	.contact_input-wrap 
+		input
+			font-size: 55px
+	.contact_send-btn
+		font-size: 55px
 
 @media only screen and (max-width : 825px)
 	.locations_cities-item
 		font-size: 50px
+	.contact_input-wrap 
+		input
+			font-size: 45px
+	.contact_send-btn
+		font-size: 45px
+
+@media only screen and (max-width : 730px)
+	.contact_wrap
+		height: 50%
+		padding: 15px
+		justify-content: center
+	.contact_form
+		flex-direction: column
+		justify-content: center
+		height: auto
+	.contact_input-wrap
+		width: 100%
+		height: auto
+		justify-content: flex-start
+		margin: 10px 0 0 0
+		input
+			border: 7px solid #000 
+			margin: 5px 0 0 0
+			height: 55px
+	.contact_title
+		font-size: 100px
+		text-align: center
+	.contact_picture
+		display: block
+		height: 50%
+		padding: 15px
+	.contact_send-btn
+		order: 1
+		height: 55px
+		align-self: center
+		// display: flex
+		// justify-content: center
+		// align-items: center
+		line-height: 55px
+		margin: 10px 0 0 0
 
 @media only screen and (max-width : 700px)
 	.about_title
@@ -96,6 +145,10 @@
 		a
 			font-size: 90px
 
+@media only screen and (max-height : 700px)
+	.contact_input-wrap
+		margin: 5px 0 0 0 !important
+
 @media only screen and (max-height : 675px)
 	.mainpage_navbar-links
 		font-size: 35px
@@ -104,12 +157,34 @@
 	.about_description
 		font-size: 14px !important
 
+@media only screen and (max-height : 640px)
+	.contact_title
+		font-size: 55px !important
+	.contact_input-wrap 
+		input
+			height: 45px
+			font-size: 35px
+	.contact_send-btn
+		height: 45px
+		line-height: 45px
+		font-size: 35px
+
+
 @media only screen and (max-height : 576px)
 	.mainpage_navbar-links-item:last-child
 		margin-top: 30px
 	.mainpage_navbar-links
 		margin: 20px 0 0 0
-	
+
+@media only screen and (max-height : 540px)
+	.contact_picture
+		height: 40%
+	.contact_wrap
+		height: 60%
+
+@media only screen and (max-height : 450px)
+	.contact_send-btn
+		display: none
 
 @media only screen and (max-width : 525px)
 	.about_title
@@ -121,6 +196,8 @@
 	.locations_vouchers
 		a
 			font-size: 70px
+	.contact_title
+		font-size: 80px
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-height : 470px)
@@ -219,6 +296,14 @@
 	.locations_vouchers
 		a
 			font-size: 50px
+	.contact_title
+		font-size: 70px
+	.contact_input-wrap
+		margin: 25px 0 0 0
+	.contact_wrap, .contact_picture
+		padding: 10px
+	.contact_input-wrap input
+		padding: 0 10px
 
 @media only screen and (max-width : 320px)
 	.mainpage_menuleft

@@ -1,0 +1,70 @@
+.contact
+	&_wrap
+		padding: 8.5% 7.5%
+		height: 100%
+		display: flex
+		flex-direction: column
+		justify-content: space-between
+	&_title
+		text-transform: uppercase
+		color: #4ca4ab
+		font-size: 150px
+		letter-spacing: 1.15px
+		margin: 0
+		line-height: .7
+	&_form
+		display: flex
+		justify-content: space-between
+		align-items: flex-end
+		height: 100%
+	&_input-wrap
+		display: flex
+		flex-direction: column
+		width: calc(100% - 240px)
+		height: 100%
+		justify-content: flex-end
+		input
+			height: 100px
+			margin-top: 20px
+			border: 10px solid #000
+			background: transparent
+			padding: 0 20px
+			font-size: 66px
+			placeholder-color: #000
+			font-family: barlev
+			font-weight: bold
+			letter-spacing: 0.56px
+			&:focus
+				outline: 2px solid #e95a2d
+			&::placeholder
+				color: #000
+	&_send-btn
+		width: 200px
+		height: 100px
+		line-height: 100px
+		background: #e95a2d
+		text-transform: uppercase
+		color: #fff
+		font-size: 66px
+		border: none
+		font-family: barlev
+		font-weight: bold
+		letter-spacing: 0.56px
+		cursor: pointer
+
+	&_picture
+		display: none
+		// background: url('../img/locations_img.jpg')
+		// background-size: cover
+		// background-position: center center
+		// background-repeat: no-repeat
+		img
+			// width: 100%
+			// height: auto
+			display: block
+			width: 100%
+			height: 100%
+			object-fit: cover
+
+	&_container
+		height: 100%
