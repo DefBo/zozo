@@ -25,4 +25,10 @@ $(function() {
 		});
 	});
 
+	$(document).ready(function(){
+		$('.menu_accordion-dish').click(function(){
+			$('.menu_sheet').addClass('menu-shown');
+		});
+	});
+
 });
