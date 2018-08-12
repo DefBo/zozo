@@ -83,6 +83,45 @@
 			left: 20px
 			right: auto
 			bottom: auto
+	.menu_desktop
+		display: none
+	.menu_phone
+		display: block
+	.menu_accordion-dish
+		background-color: #29b7ba
+		color: #000
+		cursor: pointer
+		padding: 10px
+		width: 100%
+		border: none
+		text-align: left
+		outline: none
+		font-size: 18px
+		transition: 0.4s
+		border-bottom: 2px solid #000
+		text-transform: uppercase
+		font-family: almoni
+		font-weight: bold
+		&:hover, &-active
+			color: #5bb4b8
+		&:after
+			content: '\002B'
+			color: #777
+			ont-weight: bold
+			float: right
+			margin-left: 5px
+		&-btn-active
+			border-bottom: none
+			border-color: #000
+			&:after
+				content: "\2212"
+	.menu_accordion-item
+		color: #fff
+		background: #000
+	.menu_accordion-dish
+		color: #000
+		background: #e2f4f5
+		border: none
 
 @media only screen and (max-width : 730px)
 	.contact_wrap
@@ -113,9 +152,6 @@
 		order: 1
 		height: 55px
 		align-self: center
-		// display: flex
-		// justify-content: center
-		// align-items: center
 		line-height: 55px
 		margin: 10px 0 0 0
 
@@ -262,7 +298,6 @@
 		max-width: 75%
 	.mainpage_menuleft
 		font-size: 70px
-
 	.mainpage_navicon-wrap
 		top: 31px
 		right: 30px
@@ -296,50 +331,35 @@
 		svg
 			width: 27px
 			height: 27px
-
 	.about_wrap
 		padding: 12px
 
 	.about_wrap 
 		.col:first-child
 			padding: 15px 0 0 0
-
-	.menu_accordion-item, .menu_accordion-title, .menu_accordion-dish
-		background: #e2f4f5
-		&:hover, , &-active
-			color: #29b7ba
-
 	.menu_accordion
 	    border: 5px solid #000
 	    border-bottom: 3px solid #000
-
 	.mainpage_logo
 		display: none
-
 	.mainpage_logo-menu
 		display: block
 		width: 200px
-
 	.menu_wrap 
 		.mainpage_logo
 			top: 25px
-
 	.menu_container
 		padding: 70px 20px 0
-
 	.menu_accordion
 		margin: 0 0 5px 0
-
 	.menu_sheet
 		border-width: 5px
-
 	.menu_wrap
 		padding-bottom: 100px
 
 @media only screen and (max-height : 385px)
 	.mainpage_navbar-links
 		font-size: 22px
-
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 375px)
@@ -372,7 +392,6 @@
 @media only screen and (max-height : 385px)
 	.mainpage_navbar-links
 		font-size: 22px
-
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 375px)

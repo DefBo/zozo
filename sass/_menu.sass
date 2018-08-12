@@ -20,6 +20,7 @@
 		width: 265px
 		border: 7px solid #000
 		border-bottom: 5px solid #000
+		background: #000
 		&-item, &-title
 			background-color: #29b7ba
 			color: #000
@@ -37,17 +38,9 @@
 			font-weight: bold
 			&:hover, &-active
 				color: #fff
-			// &:after
-			// 	content: '\002B'
-			// 	color: #777
-			// 	ont-weight: bold
-			// 	float: right
-			// 	margin-left: 5px
 			&-active
 				border-bottom: none
 				border-color: #000
-				// &:after
-				// 	content: "\2212"
 		&-title
 			background-color: #000
 			color: #fff
@@ -55,6 +48,10 @@
 				background-color: #000
 		&-panel
 			background-color: #fff
+			max-height: 0
+			overflow: hidden
+			transition: max-height 0.2s ease-out
+		&-sheet-mobile
 			max-height: 0
 			overflow: hidden
 			transition: max-height 0.2s ease-out
@@ -112,14 +109,24 @@
 					
 			.col
 				width: calc(50% - 12.5px)
+	&_accordion-sheet-mobile
+		background: #e2f4f5
+		padding: 0 10px
+		&-item
+			padding: 10px 0
+			font-family: almoni
+			font-weight: 400
+			font-size: 16px
+			span
+				margin: 0 5px 0 0
 	&_sheet.menu-shown
 		visibility: visible
 		opacity: 1
+	&_phone
+		display: none
 
-
-
-
-
+.fullheight
+	max-height: 100% !important
 
 .mainpage_logo-menu
 	display: none
